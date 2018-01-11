@@ -1,0 +1,268 @@
+body, html, ul {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+
+body {
+  background-color: #282c34;
+}
+
+html {
+  background-color: #0f101b;
+}
+
+li {
+  list-style: none;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: #f1b90b;
+}
+
+.green {
+  color: #65B042;
+}
+
+.model__tools {
+  background: #21252b;
+  padding: 10px;
+  width: 40px;
+  float: left;
+  text-align: center;
+  height: max-content;
+  height: auto;
+  height: -webkit-fill-available;
+  border-right: 2px solid #000;
+}
+
+.model__tools i {
+  font-size: 1.3em;
+}
+
+.model__tools i:hover {
+  color: #ccc;
+}
+
+.model__tools ul a {
+  color: #a6a6a6;
+}
+
+.model__tools li {
+  height: 20px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.model__files {
+  width: 160px;
+  float: left;
+  height: max-content;
+  height: auto;
+  height: -webkit-fill-available;
+  border-right: 2px solid #000;
+  background: #21252b;
+  padding-top: 20px;
+}
+
+.model__files-js, .model__files-css, .model__files-html {
+  color: #a6a6a6;
+  font-size: 0.7em;
+  padding: 6px 28px 6px;
+  margin-top: 3px;
+}
+
+.model__files-js i, .model__files-css i, .model__files-html i {
+  font-size: 1.2em;
+}
+
+.model__files-js i {
+  color: #f3ec7c;
+}
+
+.model__files-css i {
+  color: #29a2ff;
+}
+
+.model__files-html i {
+  color: #f1b90b;
+}
+
+.model__files li {
+  cursor: pointer;
+}
+
+.model__files li:hover, .model__files li:focus, .model__files li:active {
+  background: #333;
+}
+
+.folder {
+  color: #ccc;
+  font-size: 0.8em;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+.folder i {
+  color: #f3ec7c;
+}
+
+.model__code {
+  width: 73%;
+  float: left;
+  height: max-content;
+  height: auto;
+  height: -webkit-fill-available;
+  border-right: 2px solid #000;
+  background-color: #282c34;
+}
+
+.model__code-numbers {
+  width: 15px;
+  float: left;
+  text-align: center;
+  color: #797979;
+  font-size: 0.6em;
+  padding: 5px;
+  height: auto;
+  height: -webkit-fill-available;
+  border-right: 2px solid #000;
+  padding-top: 30px;
+  background-color: #0f101b;
+}
+
+.model__code-numbers li {
+  margin-buttom: 40px;
+  margin-bottom: 12px;
+  background-color: none;
+}
+
+.model__header {
+  height: 40px;
+  width: 100%;
+  background-color: #0f101b;
+  padding-top: 5px;
+}
+
+.model__tab {
+  width: 200px;
+  background: #404040;
+  height: 25px;
+  margin-left: 28px;
+  padding-top: 15px;
+  text-align: center;
+  color: #a6a6a6;
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 0px;
+  font-size: 0.7em;
+  float: left;
+  margin-right: -22px;
+}
+
+.model__tab i {
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  margin-left: 36px;
+}
+
+.model__tab.active {
+  background: #282c34;
+}
+
+.model__right {
+  clear: both;
+}
+
+.tip {
+  width: 110px;
+  position: relative;
+  left: 70px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  top: -14px;
+  display: none;
+  border-radius: 0px 8px 8px 8px;
+  font-size: 0.7em;
+  color: #a6a6a6;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+li:hover .tip {
+  display: block;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.google-codelab-step-0 {
+  padding-top: 24px;
+}
+
+.google-codelab-step-0 pre {
+  display: block;
+  color: #fff;
+  padding-left: 50px;
+  -webkit-text-size-adjust: none;
+  line-height: 1.9;
+}
+
+.google-codelab-step-0 pre .tag, .google-codelab-step-0 code .tag {
+  color: #29a2ff;
+}
+
+.google-codelab-step-0 pre .atn, .google-codelab-step-0 code .atn {
+  color: #f1b90b;
+}
+
+.google-codelab-step-0 pre .atv, .google-codelab-step-0 code .atv {
+  color: #65B042;
+}
+
+div#terminal {
+  height: 350px;
+  background: #000;
+  width: 730px;
+  margin-left: -25%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10%;
+}
+
+.terminal__header {
+  background: #fff;
+  text-align: center;
+  padding: 4px;
+}
+
+.terminal__btn {
+  float: left;
+  position: absolute;
+}
+
+.terminal__code {
+  color: #ccc;
+  padding: 10px;
+}
