@@ -19,7 +19,7 @@
   </head>
   
   <body id="ide-app">
-  <div id="ide">
+ <div id="ide">
   <div class="model">
     <div class="model__tools">
       <ul>
@@ -62,23 +62,26 @@
     <div class="model__files">
       <div class="folder"><i class="fa fa-folder-open" aria-hidden="true"></i> Project</div>
       <ul>
-        <li class="model__files-html tab1"><i class="fa fa-html5" aria-hidden="true"></i> index.html</li> 
-        <li class="model__files-css tab2"><i class="fa fa-css3" aria-hidden="true"></i></i> style.css</li>  
-        <li class="model__files-js tab3"><i class="fa fa-code" aria-hidden="true"></i> script.js</li>
+        <li class="model__file model__files-html tab1"><i class="fa fa-html5" aria-hidden="true"></i> index.html</li> 
+        <li class="model__file model__files-css tab2"><i class="fa fa-css3" aria-hidden="true"></i></i> style.css</li>  
+        <li class="model__file model__files-js tab3"><i class="fa fa-code" aria-hidden="true"></i> script.js</li>
       <ul>
     </div>
   </div>
   <div class="model__code">
    <div class="model__header">
       <div class="model__tab tab1 active">
-        <span>index.html</span><i class="fa fa-times"></i>
+        <span>index.html</span>
       </div>
+     <i class="fa fa-times"></i>
       <div class="model__tab tab2">
-         <span>style.css</span><i class="fa fa-times"></i>
-       </div>
+         <span>style.css</span>
+      </div>
+      <i class="fa fa-times"></i>
        <div class="model__tab tab3">
-         <span>script.js</span><i class="fa fa-times"></i>
+         <span>script.js</span>
        </div>
+       <i class="fa fa-times" ng-tab=".model__tab3"></i>
     </div>
     
     <div class="model__right">
@@ -203,7 +206,7 @@
    </div>
  </div>
 </div>
-    
+        
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>

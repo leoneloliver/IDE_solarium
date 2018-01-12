@@ -37,6 +37,10 @@ pre {
   color: #65B042;
 }
 
+.transp {
+  opacity: 0;
+}
+
 .model__tools {
   background: #21252b;
   padding: 10px;
@@ -155,7 +159,16 @@ pre {
   height: 40px;
   width: 100%;
   background-color: #0f101b;
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.model__header i {
+  float: left;
+  color: #ccc;
+  font-size: 0.6em;
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: -20px;
 }
 
 .model__tab {
@@ -166,22 +179,17 @@ pre {
   padding-top: 15px;
   text-align: center;
   color: #a6a6a6;
-  border-radius: 15px 15px 0px 0px;
   margin-top: 0px;
   font-size: 0.7em;
   float: left;
   margin-right: -22px;
-}
-
-.model__tab i {
-  padding: 10px;
-  position: absolute;
-  top: 10px;
-  margin-left: 36px;
+  cursor: pointer;
 }
 
 .model__tab.active {
   background: #282c34;
+  border-top: 2px solid #f1b90b;
+  margin-top: -2px;
 }
 
 .model__right {
@@ -249,6 +257,7 @@ div#terminal {
   right: 0;
   margin: auto;
   top: 10%;
+  box-shadow: 2px 2px 10px #404040;
 }
 
 .terminal__header {
