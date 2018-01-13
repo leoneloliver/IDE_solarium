@@ -22,8 +22,13 @@ $('.tab3').on('click', function(){
   $('.code_tab1, .code_tab2').hide();
 });
 
-$('.terminal__btn').on('click', function(){
-   $('#terminal').slideUp();
+$('#terminal .terminal__btn').on('click', function(){
+   $('#terminal').fadeOut();
+   $('#terminal-footer').fadeIn();
+});
+$('#terminal-footer .terminal__btn').on('click', function(){
+   $('#terminal').fadeOut();
+   $('#terminal-footer').fadeOut();
 });
 $('.model__tools li').on('click', function(){
    var service = $('.tip',this).text();
@@ -52,4 +57,25 @@ $('.model__file').each(function(i){
     $('.model__header i').eq(i).removeClass('hide');
     
   });
-})
+});
+
+$('#login .terminal__btn').on('click', function(){
+   $('#login').fadeOut();
+});
+
+$('.ide__header').on('click', function(){
+  $('#login').fadeIn();
+});
+
+$('.folder').on('click', function(){
+  $('.model__files ul').slideToggle();
+});
+
+var checkEmail = function(){
+  $('#login, #terminal-footer').fadeOut();
+  $('#terminal').fadeIn();
+  
+  $('.error').text('Error. Please contact the adminstrator: leoneloliver@gmail.com');
+  $('.terminal__header span').text('Login Error');
+  return false;
+}

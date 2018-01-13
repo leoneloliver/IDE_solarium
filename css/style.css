@@ -6,6 +6,7 @@ body, html, ul {
 
 body {
   background-color: #282c34;
+  overflow: hidden;
 }
 
 html {
@@ -37,8 +38,35 @@ pre {
   color: #65B042;
 }
 
+.dark-grey {
+  color: #333;
+}
+
 .transp {
   opacity: 0;
+}
+
+.ide__header {
+  padding: 12px 6px;
+  background: #000;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #282c34;
+}
+
+.ide__header li {
+  display: inline;
+  color: #797979;
+  font-size: 0.8em;
+  padding: 15px;
+  font-weight: 100;
+  cursor: pointer;
+}
+.ide__header li:hover {
+  background: #21252b;
+}
+
+.ide__header li i {
+  font-size: 0.9em;
 }
 
 .model__tools {
@@ -119,6 +147,7 @@ pre {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: -5px;
+  cursor: pointer;
 }
 
 .folder i {
@@ -199,7 +228,7 @@ pre {
 .tip {
   width: 110px;
   position: relative;
-  left: 38px;
+  left: 40px;
   background: rgba(0, 0, 0, 0.8);
   padding: 8px;
   top: -20px;
@@ -249,7 +278,7 @@ li:hover .tip {
 
 div#terminal {
   height: 350px;
-  background: #000;
+  background: rgba(0, 0, 0, 0.8);
   width: 730px;
   margin-left: -25%;
   position: absolute;
@@ -274,4 +303,54 @@ div#terminal {
 .terminal__code {
   color: #ccc;
   padding: 10px;
+}
+
+div#terminal-footer {
+  background: #000;
+  clear: both;
+  position: absolute;
+  /* top: -180px; */
+  width: 100%;
+  bottom: 0;
+  height: 300px;
+}
+
+div#terminal-footer .terminal__header {
+  background: #0f101b;
+  text-align: center;
+  padding: 6px;
+  color: #797979;
+  border-top: 1px solid #21252b;
+}
+
+#login {
+  position: absolute;
+  height: 265px;
+  background: #000;
+  width: 360px;
+  margin-left: -25%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 10%;
+  box-shadow: 2px 2px 10px #0f101b;
+  text-align: center;
+}
+
+#login .terminal__code {
+  margin-top: 30px;
+}
+
+input.news__input-text {
+  padding: 5px;
+  width: 75%;
+  margin-bottom: 13px;
+  border: 1px solid #21252b;
+  background: #21252b;
+  color: #ccc;
+}
+
+span.error {
+  color: red;
 }

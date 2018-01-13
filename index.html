@@ -15,17 +15,25 @@
     <meta name=theme-color content=#252525>
     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v1" />
   </head>
   
   <body id="ide-app">
  <div id="ide">
+  <div class="ide__header">
+    <ul>
+      <li><i class="fa fa-file-text-o" aria-hidden="true"></i> File</li>
+      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</li>
+      <li><i class="fa fa-search" aria-hidden="true"></i> Find</li>
+      <li><i class="fa fa-cog" aria-hidden="true"></i> Preferences</li>
+    </ul>
+  </div>
   <div class="model">
     <div class="model__tools">
       <ul>
         <li>
           <a><i class="fa fa-cube" aria-hidden="true"></i></a>
-          <div class="tip">connect to cube</div>    
+          <div class="tip">conect to cube</div>    
         </li>
         <li>
           <a><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
@@ -180,7 +188,7 @@
         <span class="atn">name:</span> name
       }
   }
-<span class="tag">return</span> <span class="atn">newuser</span>;
+  <span class="tag">return</span> <span class="atn">newuser</span>;
 }
 </pre>
       </div>  
@@ -193,6 +201,23 @@
     </div>
   </div>
   
+ <div id="login" class="hide">
+   <div class="terminal__header">
+     <div class="terminal__btn"><i class="fa fa-circle red" aria-hidden="true"></i> <i class="fa fa-circle orange" aria-hidden="true"></i> <i class="fa fa-circle green" aria-hidden="true"></i></div>
+     -- User Login --
+   </div>
+   <div class="terminal__code">
+     <i class="fa fa-user-circle-o dark-grey" aria-hidden="true"></i>
+     <form id="news__form" onsubmit='return checkEmail()'>
+       <br>
+       <input type="text" name="email" placeholder="User" class="news__input-text">
+       <br>
+       <input type="password" name="password" placeholder="Password" class="news__input-text">
+        <br />
+        <input type="submit" value="Sign up now" class="news__submit hide">
+      </form>  
+   </div>
+ </div>
                 
  <div id="terminal" class="hide">
    <div class="terminal__header">
@@ -202,13 +227,30 @@
    <div class="terminal__code">
      Last login: Fri Sep 17 22:41:18 on ttyp1<br>
      Welcome to IDE<br>
-     HackPro:~/Desktop admin$
+     HackPro:~/Desktop admin$<br>
+     <span class="error"></span>
    </div>
  </div>
+        
+ <div id="terminal-footer" class="hide">
+   <div class="terminal__header">
+     <div class="terminal__btn">
+       <i class="fa fa-circle red" aria-hidden="true"></i> <i class="fa fa-circle orange" aria-hidden="true"></i> <i class="fa fa-circle green" aria-hidden="true"></i>
+     </div>
+     -- Terminal <span>code</span> --
+   </div>
+   <div class="terminal__code">
+     Last login: Fri Sep 17 22:41:18 on ttyp1<br>
+     Welcome to IDE<br>
+     HackPro:~/Desktop admin$<br>
+     <span class="error"></span>
+   </div>
+ </div>  
+        
 </div>
         
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v1"></script>
   </body>
 </html>
