@@ -242,23 +242,3 @@ var TerminalFooter = React.createClass({
 });
 React.render(<TerminalFooter />, document.querySelector("component-terminalfooter"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
