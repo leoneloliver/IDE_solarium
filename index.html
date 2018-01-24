@@ -4,253 +4,37 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="IDE project" />
-    <meta name="keywords" content= "IDE project, hire me" />
-    <title>IDE Solaruim</title>
+    <title>IDE APP</title>
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="IDE APP">
-    <meta name="msapplication-TileColor" content="#252525">
-    <meta name=theme-color content=#252525>
+    <meta name="apple-mobile-web-app-title" content="Flickr APP">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name=theme-color content=#000>
     
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v1" />
+    <link rel="stylesheet" href="style.css" />
+    
   </head>
   
-  <body id="ide-app">
- <div id="ide">
-  <div class="ide__header">
-    <ul>
-      <li><i class="fa fa-file-text-o" aria-hidden="true"></i> File</li>
-      <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</li>
-      <li><i class="fa fa-search" aria-hidden="true"></i> Find</li>
-      <li><i class="fa fa-cog" aria-hidden="true"></i> Preferences</li>
-    </ul>
-  </div>
-  <div class="model">
-    <div class="model__tools">
-      <ul>
-        <li>
-          <a><i class="fa fa-cube" aria-hidden="true"></i></a>
-          <div class="tip">conect to cube</div>    
-        </li>
-        <li>
-          <a><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-          <div class="tip">cloud system</div>  
-        </li>
-        <li>
-          <a><i class="fa fa-eye" aria-hidden="true"></i></a>
-          <div class="tip">view code</div>     
-        </li>
-        <li>
-          <a><i class="fa fa-code" aria-hidden="true"></i></a>
-          <div class="tip">mode debug</div>     
-        </li>
-        <li>
-          <a><i class="fa fa-database" aria-hidden="true"></i></a>
-          <div class="tip">connect database</div>     
-        </li>
-        
-        <li>
-          <a><i class="fa fa-pie-chart" aria-hidden="true"></i></a>
-          <div class="tip">data visualization</div>    
-        </li>
-        <li>
-          <a><i class="fa fa-terminal" aria-hidden="true"></i></a>
-          <div class="tip">open terminal</div>    
-        </li>
-        <li>
-          <a><i class="fa fa-files-o" aria-hidden="true"></i></a>
-          <div class="tip">clone repository</div>     
-        </li>
-        
-      </ul>
+  <body id="ide">
+    <component-header></component-header>
+    <component-sidebar></component-sidebar>
+    <component-terminal></component-terminal>
+    <component-files></component-files>
+    <div class="model__code">
+      <component-codeheader></component-codeheader>
+      <component-coderight></component-coderight>
     </div>
-    <div class="model__files">
-      <div class="folder"><i class="fa fa-folder-open" aria-hidden="true"></i> Project</div>
-      <ul>
-        <li class="model__file model__files-html tab1"><i class="fa fa-html5" aria-hidden="true"></i> index.html</li> 
-        <li class="model__file model__files-css tab2"><i class="fa fa-css3" aria-hidden="true"></i></i> style.css</li>  
-        <li class="model__file model__files-js tab3"><i class="fa fa-code" aria-hidden="true"></i> script.js</li>
-      <ul>
-    </div>
-  </div>
-  <div class="model__code">
-   <div class="model__header">
-      <div class="model__tab tab1 active">
-        <span>index.html</span>
-      </div>
-     <i class="fa fa-times"></i>
-      <div class="model__tab tab2">
-         <span>style.css</span>
-      </div>
-      <i class="fa fa-times"></i>
-       <div class="model__tab tab3">
-         <span>script.js</span>
-       </div>
-       <i class="fa fa-times" ng-tab=".model__tab3"></i>
-    </div>
-    
-    <div class="model__right">
-      <div class="model__code-numbers">
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
-          <li>11</li>
-          <li>12</li>
-          <li>13</li>
-          <li>14</li>
-          <li>15</li>
-          <li>16</li>
-          <li>17</li>
-          <li>18</li>
-          <li>19</li>
-          <li>20</li>
-          <li>21</li>
-          <li>22</li>
-          <li>23</li>
-          <li>24</li>
-          <li>25</li>
-          <li>26</li>
-          <li>27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-        </ui>
-      </div>
-      <div class="model__html code code_tab1 hide">
-      <!-- code -->
-              <div class="google-codelab-step-0">
-  <pre><code language="" class=""><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">unresolved</span><span class="tag">&gt;</span><span class="pln">
-  </span><span class="tag">&lt;template</span><span class="pln"> </span><span class="atn">is</span><span class="pun">=</span><span class="atv">"dom-bind"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"app"</span><span class="tag">&gt;</span><span class="pln">
-    </span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">on-submit</span><span class="pun">=</span><span class="atv">"addItem"</span><span class="tag">&gt;</span><span class="pln">
-      </span><span class="tag">&lt;paper-input</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"{{newItemValue}}"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"Yor home city..."</span><span class="tag">&gt;&lt;/paper-input&gt;</span><span class="pln">
-      </span><span class="tag">&lt;paper-button</span><span class="pln"> </span><span class="atn">on-click</span><span class="pun">=</span><span class="atv">"addItem"</span><span class="tag">&gt;</span><span class="pln">List your home</span><span class="tag">&lt;/paper-button&gt;</span><span class="pln">
-    </span><span class="tag">&lt;/form&gt;</span><span class="pln">
-    </span><span class="tag">&lt;template</span><span class="pln"> </span><span class="atn">is</span><span class="pun">=</span><span class="atv">"dom-repeat"</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"{{items}}"</span><span class="tag">&gt;</span><span class="pln">
-      </span><span class="tag">&lt;div&gt;</span><span class="pln">
-        </span><span class="tag">&lt;paper-icon-button</span><span class="pln"> </span><span class="atn">icon</span><span class="pun">=</span><span class="atv">"delete"</span><span class="pln"> </span><span class="atn">on-click</span><span class="pun">=</span><span class="atv">"deleteItem"</span><span class="tag">&gt;&lt;/paper-icon-button&gt;</span><span class="pln">
-        </span><span class="tag">&lt;paper-checkbox</span><span class="pln"> </span><span class="atn">on-change</span><span class="pun">=</span><span class="atv">"toggleItem"</span><span class="pln"> </span><span class="atn">checked</span><span class="pun">=</span><span class="atv">"{{item.done}}"</span><span class="tag">&gt;</span><span class="pln">
-          [[item.title]]
-        </span><span class="tag">&lt;/paper-checkbox&gt;</span><span class="pln">
-      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-    </span><span class="tag">&lt;/template&gt;</span><span class="pln">
-  </span><span class="tag">&lt;/template&gt;</span>
-<code language="" class=""><span class="tag">&lt;/body&gt;</span></code>
-  
-</div>  
-      <!-- code -->
+    <component-login></component-login>
+    <component-terminalfooter></component-terminalfooter>
 
-      </div>
-                
-      <div class="model__html code code_tab2 hide">
-      <!-- code -->
-      <div class="google-codelab-step-0">
-  <pre><code language="" class=""><span class="atn">body{</span>
-  <span class="pln"> </span><span class="tag">background:</span> <span class="atv">"#efefef";</span>
-<span class="atn">}</span></pre>
-  <pre><code language="" class=""><span class="atn">.header{</span>
-  <span class="pln"> </span><span class="tag">background:</span> <span class="atv">"#efefef";</span>
-  <span class="pln"> </span><span class="tag">color:</span> <span class="atv">"#000";</span>
-<span class="atn">}</span></pre>
-<pre><code language="" class=""><span class="atn">.footer{</span>
-  <span class="pln"> </span><span class="tag">background:</span> <span class="atv">"#efefef";</span>
-  <span class="pln"> </span><span class="tag">color:</span> <span class="atv">"#000";</span>
-  <span class="pln"> </span><span class="tag">font-size:</span> <span class="atv">1.2em;</span>
-  <span class="pln"> </span><span class="tag">padding:</span> <span class="atv">1em;</span>
-<span class="atn">}</span>
-  </pre>
-  
-  
-</div>  
-      <!-- code -->
-
-      </div>
     
-     <div class="model__html code code_tab3 hide">
-      <!-- code -->
-      <div class="google-codelab-step-0">
-<pre>
-<span class="tag">var</span> <span class="atn">creatuser</span> = <span class="atv">function()</span>{
-  <span class="tag">var</span> <span class="atn">id</span> = 0;
-  <span class="tag">var</span> <span class="atn">newuser</span> = <span class="atv">function(<span class="tag">name</span>)</span>{
-      <span class="tag">return</span> {
-        <span class="atn">id:</span> id,
-        <span class="atn">name:</span> name
-      }
-  }
-  <span class="tag">return</span> <span class="atn">newuser</span>;
-}
-</pre>
-      </div>  
-      <!-- code -->
-
-      </div>
-                
-                
-                
-    </div>
-  </div>
-  
- <div id="login" class="hide">
-   <div class="terminal__header">
-     <div class="terminal__btn"><i class="fa fa-circle red" aria-hidden="true"></i> <i class="fa fa-circle orange" aria-hidden="true"></i> <i class="fa fa-circle green" aria-hidden="true"></i></div>
-     -- User Login --
-   </div>
-   <div class="terminal__code">
-     <i class="fa fa-user-circle-o dark-grey" aria-hidden="true"></i>
-     <form id="news__form" onsubmit='return checkEmail()'>
-       <br>
-       <input type="text" name="email" placeholder="User" class="news__input-text">
-       <br>
-       <input type="password" name="password" placeholder="Password" class="news__input-text">
-        <br />
-        <input type="submit" value="Sign up now" class="news__submit hide">
-      </form>  
-   </div>
- </div>
-                
- <div id="terminal" class="hide">
-   <div class="terminal__header">
-     <div class="terminal__btn"><i class="fa fa-circle red" aria-hidden="true"></i> <i class="fa fa-circle orange" aria-hidden="true"></i> <i class="fa fa-circle green" aria-hidden="true"></i></div>
-     -- Terminal <span>code</span> --
-   </div>
-   <div class="terminal__code">
-     Last login: Fri Sep 17 22:41:18 on ttyp1<br>
-     Welcome to IDE<br>
-     HackPro:~/Desktop admin$<br>
-     <span class="error"></span>
-   </div>
- </div>
-        
- <div id="terminal-footer" class="hide">
-   <div class="terminal__header">
-     <div class="terminal__btn">
-       <i class="fa fa-circle red" aria-hidden="true"></i> <i class="fa fa-circle orange" aria-hidden="true"></i> <i class="fa fa-circle green" aria-hidden="true"></i>
-     </div>
-     -- Terminal <span>code</span> --
-   </div>
-   <div class="terminal__code">
-     Last login: Fri Sep 17 22:41:18 on ttyp1<br>
-     Welcome to IDE<br>
-     HackPro:~/Desktop admin$<br>
-     <span class="error"></span>
-   </div>
- </div>  
-        
-</div>
-        
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.min.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.8.1/axios.min.js"></script>
+    <script type="text/babel" src="components-react.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js?v1"></script>
+    <script src="script.js"></script>
   </body>
 </html>
