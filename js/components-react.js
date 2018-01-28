@@ -170,30 +170,6 @@ var CodeHeader = React.createClass({
 React.render(<CodeHeader />, document.querySelector("component-codeheader"));
 
 
-var CodeRight = React.createClass({
-  render: function(){
-    return (
-      <div className="model__right">
-        <div className="model__code-numbers">
-          <ul>
-            {(()=>{
-              let container =[];
-              let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30] //can be anything array, object 
-              arr.forEach((val,index)=>{
-                container.push(<li key={index}>{val}</li>)
-              });
-              return container;     
-            })()}
-          </ul>
-        </div>
-        <div className="model__html code code_tab1 hide"></div>
-        <div className="model__html code code_tab2 hide"></div>
-        <div className="model__html code code_tab3 hide"></div>
-      </div>
-    )
-  }
-});
-React.render(<CodeRight />, document.querySelector("component-coderight"));
 
 var Login = React.createClass({
   render: function(){
@@ -242,3 +218,51 @@ var TerminalFooter = React.createClass({
 });
 React.render(<TerminalFooter />, document.querySelector("component-terminalfooter"));
 
+
+var CodeRight = React.createClass({
+  getInitialState: function() {
+    return {
+      codes: []
+    }
+  },
+  componentDidMount: function() {
+    // Is there a React-y way to avoid rebinding `this`? fat arrow?
+    var th = this;
+    this.serverRequest = 
+      axios.get(this.props.source)
+        .then(function(result) {    
+          th.setState({
+            codes: result.data
+          });
+        })
+  },
+  componentWillUnmount: function() {
+    this.serverRequest.abort();
+  },
+  render: function(){
+    return (
+      <div className="model__right">
+        <div className="model__code-numbers">
+          <ul>
+            {(()=>{
+              let container =[];
+              let i;
+              for(i = 1; i<= 30; i++){
+                container.push(<li>{i}</li>)
+              }
+              
+              return container;     
+            })()}
+          </ul>
+        </div>
+        {this.state.codes.map(function(markup) {
+            return (
+              <div dangerouslySetInnerHTML={{ __html: markup.code }} className={markup.guid} />
+            )
+          })}
+        
+      </div>
+    )
+  }
+});
+React.render(<CodeRight  source="https://api.myjson.com/bins/q5ash" />, document.querySelector("component-coderight"));
