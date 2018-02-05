@@ -7,5 +7,10 @@ It is an IDE Prototype<br>
 ![Layout](https://raw.githubusercontent.com/leoneloliver/IDE_solarium/master/img/ScreenShot.png)
 
 <a href="https://www.netlify.com">
-  <img data-src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"/>
+  <img data-src=""/>
 </a>
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/leoneloliver/IDE_solarium)
+
