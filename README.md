@@ -12,5 +12,5 @@ It is an IDE Prototype<br>
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/leoneloliver/IDE_solarium)
+[![Deploy to Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://app.netlify.com/sites/solarium/deploys)
 
