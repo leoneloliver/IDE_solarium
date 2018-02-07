@@ -81,6 +81,7 @@ pre {
   height: auto;
   height: -webkit-fill-available;
   border-right: 2px solid #000;
+  height: 100vh;
 }
 
 .model__tools i {
@@ -110,6 +111,7 @@ pre {
   border-right: 2px solid #000;
   background: #21252b;
   padding-top: 20px;
+  height: 100vh;
 }
 
 .model__files-js, .model__files-css, .model__files-html {
