@@ -1,4 +1,4 @@
-# IDE_solarium V1.0.4
+# IDE_solarium V1.0.4 updated
 
 It is an IDE Prototype<br>
 [Demo here](http://onclickmidia.net/solarium) 
